@@ -1,0 +1,83 @@
+↓Tag [ngx.components.UIElement-1643633547809]: 
+  tagName: canvas
+  ↓Attr [ngx.components.UIAttribute-1643637389435]: 
+    attrName: id
+    attrValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: plain:XEOKIT
+  ↓Style [ngx.components.UIStyle-1643637446556]: 
+    styleContent: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '	width: 100%;
+            	height: 100%
+            '
+↓PageEvent [ngx.components.UIPageEvent-1643633602147]: 
+  ↓InitXeokit [ngx.components.UICustomAction-1643633623214]: 
+    actionValue: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+        - com.twinsoft.convertigo.beans.common.FormatedContent: 
+          →: |
+            '		page.c8o.log.debug(''[MB]''+ props.actionFunction +'': ''+ props.actionName);
+            		
+            		const viewer = new Viewer({
+            		        canvasId: "XEOKIT",
+            		        transparent: true
+            		});
+            
+            	    viewer.camera.eye = [-3.933, 2.855, 27.018];
+            	    viewer.camera.look = [4.400, 3.724, 8.899];
+            	    viewer.camera.up = [-0.018, 0.999, 0.039];
+            
+            	    const webIFCLoader = new WebIFCLoaderPlugin(viewer, {
+            	        wasmPath: "https://cdn.jsdelivr.net/npm/@xeokit/xeokit-sdk/dist/"
+            	    });
+            
+            
+            	    const model = webIFCLoader.load({
+            	        src: vars.IFCFile,
+            	        edges: true
+            	    });		
+            		
+            		resolve();
+            '
+    package_dependencies: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: '@xeokit/xeokit-sdk'
+              - java.lang.String: 
+                - ↑value: 2.3.1
+    page_ts_imports: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: Viewer
+              - java.lang.String: 
+                - ↑value: '@xeokit/xeokit-sdk'
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: WebIFCLoaderPlugin
+              - java.lang.String: 
+                - ↑value: '@xeokit/xeokit-sdk'
+    ↓IFCFile [ngx.components.UIControlVariable-1643638038602]: 
+      varValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: source:{"filter":"Shared","project":"lib_Xeokit_ui_ngx","input":"","model":{"data":[{"priority":1643633500368,"regular":true}],"path":"?.IFCSourceURL","prefix":"","suffix":"","custom":"","useCustom":false}}
+↓IFCSourceURL [ngx.components.UICompVariable-1643637947550]: 
+  value: '''https://raw.githubusercontent.com/xeokit/xeokit-sdk/master/assets/models/ifc/Duplex.ifc'''
