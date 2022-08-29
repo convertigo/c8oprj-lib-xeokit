@@ -1,7 +1,15 @@
 
 # ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/core/images/project_color_16x16.png?raw=true "Project") lib_Xeokit_ui_ngx
 
-Convertigo Mobile builder Project
+This is the Xeokit 3D IF file viewer Shared component for Convertigo Low Code Platform.
+
+More information on the Xeokit viewer library can be found at 
+https://www.npmjs.com/package/@xeokit/xeokit-sdk
+
+
+
+
+
 
 <details><summary><span style="color:DarkGoldenRod"><i>Connectors</i></span></summary><blockquote><p>
 
@@ -39,7 +47,7 @@ My First Page as root page
 
 ### ![](https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uisharedregular_color_16x16.png?raw=true "UISharedRegularComponent") Xeokit3DViewer
 
-
+The Xeokit 3D IFC file viewer Shared component
 
 <span style="color:DarkGoldenRod">Variables</span>
 
@@ -57,7 +65,7 @@ comment
 <img src="https://github.com/convertigo/convertigo/blob/develop/engine/src/com/twinsoft/convertigo/beans/ngx/components/images/uicompvariable_color_16x16.png?raw=true "  alt="UICompVariable" >&nbsp;IFCSourceURL
 </td>
 <td>
-
+The IFC file reference. Can be an URL to a remote HTTP server or a local file in the the assets folder
 </td>
 </tr>
 </table>

@@ -1,3 +1,4 @@
+comment: Sample application to demo the shared component
 componentScriptContent: 
   - xmlizable: 
     - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent

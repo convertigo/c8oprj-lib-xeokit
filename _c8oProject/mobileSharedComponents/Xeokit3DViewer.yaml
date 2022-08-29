@@ -1,3 +1,4 @@
+comment: The Xeokit 3D IFC file viewer Shared component
 ↓Tag [ngx.components.UIElement-1643633547809]: 
   tagName: canvas
   ↓Attr [ngx.components.UIAttribute-1643637389435]: 
@@ -80,4 +81,5 @@
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: source:{"filter":"Shared","project":"lib_Xeokit_ui_ngx","input":"","model":{"data":[{"priority":1643633500368,"regular":true}],"path":"?.IFCSourceURL","prefix":"","suffix":"","custom":"","useCustom":false}}
 ↓IFCSourceURL [ngx.components.UICompVariable-1643637947550]: 
+  comment: The IFC file reference. Can be an URL to a remote HTTP server or a local file in the the assets folder
   value: '''https://raw.githubusercontent.com/xeokit/xeokit-sdk/master/assets/models/ifc/Duplex.ifc'''

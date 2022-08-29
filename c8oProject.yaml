@@ -1,6 +1,15 @@
 ↑convertigo: 8.1.0.m006
 ↓lib_Xeokit_ui_ngx [core.Project]: 
-  comment: Convertigo Mobile builder Project
+  comment: |
+    This is the Xeokit 3D IF file viewer Shared component for Convertigo Low Code Platform.
+    
+    More information on the Xeokit viewer library can be found at 
+    https://www.npmjs.com/package/@xeokit/xeokit-sdk
+    
+    
+    
+    
+    
   corsOrigin: =Origin
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓NgxBuilderTemplate [references.ProjectSchemaReference]: 
